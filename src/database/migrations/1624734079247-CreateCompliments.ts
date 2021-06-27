@@ -11,9 +11,9 @@ export class CreateCompliments1624734079247 implements MigrationInterface {
                     {name :"user_sender", type : "uuid" },
                     {name :"user_receiver", type : "uuid" },
                     {name :"tag_id", type : "uuid" },
-                    {name :"message", type: "varchar"},
+                    {name :"message", type: "varchar", isNullable: true},
                     {name : "created_at", type: "timestamp", default: "now()"},
-                    {name : "updated_at", type: "timestamp", default: "now()"}
+                    //{name : "updated_at", type: "timestamp", default: "now()"}
 
                 ],
                 foreignKeys:[
